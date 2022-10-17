@@ -30,7 +30,23 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
-
-
-TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RICE_MAINTAINER := Apex_Not_Legend
+RICE_CHIPSET := Snapdragon 636
+TARGET_ENABLE_BLUR := true
+WITH_GMS := false
+
+# Memory properties
+# Tune these properties according to device perfconfigstore.xml(if available)/device capabilities.
+# These props are overridable
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fw.bg_apps_limit?=48 \
+    persist.sys.fw.use_trim_settings?=true \
+    persist.sys.fw.empty_app_percent?=50 \
+    persist.sys.fw.trim_empty_percent?=100 \
+    persist.sys.fw.trim_cache_percent?=100 \
+    persist.sys.fw.trim_enable_memory?=2147483648 \
+    persist.sys.fw.bservice_age?=120000 \
+    persist.sys.fw.bservice_limit?=6 \
+    persist.sys.fw.bservice_enable?=true
