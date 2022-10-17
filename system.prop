@@ -4,9 +4,30 @@ persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
 debug.sdm.support_writeback=0
 
-# Wifi Display (Platform)
-media.wfd.max_resolution=7
-
 #  Keyguard
 persist.wm.enable_remote_keyguard_animation=0
 
+# Wifi Display (Platform)
+media.wfd.max_resolution=7
+
+# Extra
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+profiler.force_disable_ulog=true
+profiler.force_disable_ulog=1
+profiler.force_disable_err_rpt=1
+profiler.force_disable_err_rpt=true
+profiler.hung.dumpdobugreport=false
+debugtool.anrhistory=0
+debug.mdpcomp.logs=0
+profiler.debugmonitor=false
+profiler.launch=false
+logcat.live=disable
+persist.camera.debug.logfile=0
+
+# Power-saving props
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+ro.ril.disable.power.collapse=0
+power.saving.mode=1
+pm.sleep_mode=1
