@@ -115,9 +115,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_OPTIONAL_LD := true
 
-# Sepolicy
-SELINUX_IGNORE_NEVERALLOWS := true
-
 # Additional Kernel Flags
 TARGET_KERNEL_ADDITIONAL_FLAGS +=
 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
