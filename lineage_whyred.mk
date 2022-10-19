@@ -50,3 +50,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.fw.bservice_age?=120000 \
     persist.sys.fw.bservice_limit?=6 \
     persist.sys.fw.bservice_enable?=true
+# Sushi Bootanimation
+SUSHI_BOOTANIMATION := 720
