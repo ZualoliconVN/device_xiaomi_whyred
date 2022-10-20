@@ -16,11 +16,25 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 RICE_MAINTAINER := Apex_Not_Legend
 RICE_CHIPSET := Snapdragon 636
 TARGET_ENABLE_BLUR := true
-WITH_GMS := false
+WITH_GMS := true
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 720
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
+
+# Customized GMS Flags 
+# WITH_GMS flag is required
+# Opt out of google dialer support, compiler will build aosp dialer,
+# package type will change from PIXEL -> GMS
+TARGET_OPTOUT_GOOGLE_TELEPHONY := false
+
+# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
+# package type will change from PIXEL/GMS -> CORE
+TARGET_CORE_GMS := true
+
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := false
+
 # Memory properties
 # Tune these properties according to device perfconfigstore.xml(if available)/device capabilities.
 # These props are overridable
