@@ -14,7 +14,7 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 RICE_MAINTAINER := Apex_Not_Legend
-RICE_CHIPSET := Snapdragon 636
+RICE_CHIPSET := Snapdragon636
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
