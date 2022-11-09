@@ -13,12 +13,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/lineage/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-RICE_MAINTAINER := Apex_Not_Legend
-RICE_CHIPSET := Snapdragon636
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
-# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
-SUSHI_BOOTANIMATION := 720
+
+# CherishOS
+CHERISH_BUILD_TYPE=UNOFFICIAL
+TARGET_USES_MINI_GAPPS := true
+USE_PIXEL_CHARGING := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=ZualoliconVN
+    
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
 
@@ -97,7 +100,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_whyred
+PRODUCT_NAME := cherish_whyred
 PRODUCT_MODEL := Redmi Note 5 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
